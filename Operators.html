@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: #196872;
+        color: #fdf1e7;
+        font-family: Tahoma;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Javascript Arrow Function</h2>
+
+    <h4>INPUT : 5 , 3</h4>
+
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="div"></p>
+    <p id="mult"></p>
+    <p id="sqr"></p>
+    <p id="sqrRt"></p>
+
+    <script>
+      var add = (a, b) => a + b;
+      var sub = (a, b) => a - b;
+      var div = (a, b) => a / b;
+      var mult = (a, b) => a * b;
+      var sqr = (a, b) => a ** b;
+      var sqrRt = (a, b) => a ** b;
+
+      document.getElementById("add").innerHTML = `• 5 + 3 : ${add(5, 3)}`;
+      document.getElementById("sub").innerHTML = `• 5 - 3 : ${sub(5, 3)}`;
+      document.getElementById("div").innerHTML = `• 5 / 3 : ${div(5, 3)}`;
+      document.getElementById("mult").innerHTML = `• 5 x 3 : ${mult(5, 3)}`;
+      document.getElementById("sqr").innerHTML = `• 5³ : ${sqr(5, 3)}`;
+      document.getElementById("sqrRt").innerHTML = `• √5 : ${sqrRt(
+        5,
+        0.5
+      )} , √3 : ${sqrRt(3, 0.5)}`;
+    </script>
+  </body>
+</html>
